@@ -1,0 +1,35 @@
+{
+   "action": {
+      "default_icon": "acid-32.png",
+      "default_popup": "popup.html"
+   },
+   "background": {
+      "service_worker": "background.bundle.js"
+   },
+   "commands": {
+      "toggle-collapse": {
+         "description": "Toggle collapse",
+         "suggested_key": {
+            "default": "Alt+Shift+C"
+         }
+      }
+   },
+   "content_security_policy": {
+      "extension-pages": "script-src 'self' https://fonts.googleapis.com/* https://*.firebaseio.com; object-src 'self'"
+   },
+   "description": "Auto-Grouping Magic for your Tabs",
+   "icons": {
+      "128": "acid-128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0dpfT8TwvflSvzgtP1m0KQR0xDNSyyVTJ0C093a8vhdg9dEDf52aVLwhQIkOgTGhtQWoC2/c3DBNzoJSX2IWNUF0pIJybd6MCtjKMloIJBbfKeYL0syUva1Ew9hFrndZxXy3ZwvNq09JC9nN4oQjcVimtCuFymU8YPMFm8b22VZLO/fSnkclTQiTqspeT02M9E6ZVyDbIKOr1KIgAOaxB8Ffi+zBI3wQ6xZoSd3LH++pDnN8kesarQmbdh6zP+hwDeQYQFYiAYPkbzXglGfJok2PJ20fQNxZTeN6z54Cgw2fHBkh4rrqeLOJv3p5LK+3S7N6OopPKljHhjYfErcVLQIDAQAB",
+   "manifest_version": 3,
+   "name": "Acid Tabs",
+   "options_page": "options.html",
+   "permissions": [ "storage", "webNavigation", "tabs", "tabGroups" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "6.5.9",
+   "web_accessible_resources": [ {
+      "matches": [  ],
+      "resources": [ "content.styles.css", "acid-128.png", "acid-32.png" ]
+   } ]
+}
